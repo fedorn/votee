@@ -1,1 +1,13 @@
-vote page for {{id}}
+<h5>vote page for {{id}}</h5>
+<table>
+  <tr ng-repeat="option in options">
+    <td>
+      <button class="button secondary" ng-click="addScore(option)">{{option.name}}</button>
+    </td>
+    <td>
+      {{option.score}}
+    </td>
+  </tr>
+</table>
+<input ng-model="text" type="text" >
+<button ng-click="addOption()" class="button round success">Add new option</button>
