@@ -1,1 +1,24 @@
-Hello world!
+<html lang="en" ng-app="votee">
+<head>
+  <title>Votee</title>
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+  <script src="angularfire.min.js"></script>
+
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="row">
+    <h1>Votee</h1>
+  </div>
+  <div class="row">
+
+    <div ng-view></div>
+
+  </div>
+</body>
+</html>
